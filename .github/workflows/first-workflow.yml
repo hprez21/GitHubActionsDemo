@@ -1,0 +1,16 @@
+name: Flujo Básico
+on: push
+
+jobs:
+  primer-trabajo:
+    name: Mi Primer Job
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Primer paso - Checkout
+        uses: actions/checkout@v4
+        
+      - name: Segundo paso - Imprimir mensaje
+        run: |
+          echo "¡Hola desde GitHub Actions!"
+          echo "Este es un workflow básico de demostración"
